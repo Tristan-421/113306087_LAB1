@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro</title>
+</head>
+<body>
+<table border ="2" style="width:70%">
+	<tr> 
+		<th colspan = "3">About--113306087</th>
+	</tr>
+	<tr>
+		<td rowspan = "3"><img src = "C:\Users\trist\OneDrive\图片\abPhoto\pfp.png" alt = "profile pic" width = "100%" height = "100px" /><br><div align="center">personal photo</td>
+		<td colspan = "2"><form method= "post" action = "Intro">
+			<input type = "hidden" name = "recipient" value = "Intro">
+			<p><label>Name:
+				<input name = "name" type = "text" size = "25" maxlength = "30"><br><br></label></p>
+			<p>Gender:<input type="radio" name = "gender" value="male"> Male <input type="radio" name = "gender" value="female"> Female <input type="radio" name = "gender" value="other"> Other </p>
+			</form>
+	</tr>
+	<tr>
+		<td>
+			<form action= "/action_page.php">
+				<label for="county">County:</label>
+				<select name="county"> 
+					<option value="Taipei">Taipei</option>
+					<option value="Taoyuan">Taoyaun</option>
+					<option value="Taichung">Taichung</option>
+					<option value="Tainan">Tainan</option>
+				</select>
+			</form></td>
+		<td>
+			<form action= "/action_page.php">
+			<label for="birthday">Birthday:</label>
+
+			<input type="date" id="birthday" name="birthday" value = " 年-月-日" min = "1900-11-01" max="2021-11-30">
+			</form></td>
+	</tr>
+	<tr>
+		<td colspan = "2"><form method= "post" action = "Intro">
+			<input type = "hidden" name = "recipient" value = "Intro">
+			<p><label>E-mail:
+				<input name = "E-mail" type = "text" size = "25" maxlength = "50"></labe;></p>
+			</label>
+	</tr>
+	<tr>
+		<td><p>Hobby</td>
+		<td><form action="/action_page.php" method="get">
+			<input type ="checkbox" name="Hobby" value="Swimming"> Swimming
+			<input type ="checkbox" name="Hobby" value="Volleyball"> Volleyball
+			<input type ="checkbox" name="Hobby" value="Movie"> Movie
+			<input type ="checkbox" name="Hobby" value="Game"> Game
+			<input type ="checkbox" name="Hobby" value="Sleep"> Sleep
+		</form></p></td>
+	</tr>
+	<tr>
+		<td><p>Skill</td>
+		<td><form action="/action_page.php" method="get">
+			<input type ="checkbox" name="Skill" value="Java"> Java
+			<input type ="checkbox" name="Skill" value="HTML"> HTML
+			<input type ="checkbox" name="Skill" value="Python"> Python
+			<input type ="checkbox" name="Skill" value="Microsoft Office"> Microsoft Office
+			<input type ="checkbox" name="Skill" value="Premiere"> Premiere
+		</form></p></td>
+	</tr>
+	<tr>
+		<td><p>Say Something</td>
+		<td><form>
+				<input type="Say Something" name="Say Something" placeholder="Say something here.">
+			</form></p></td>
+	</tr>
+	<tr>
+		<td><p><form method ="post" action = "Intro">
+				<input type = "submit" value = "提交"><input type = "submit" value = "重設">
+			</form></p></td>
+	</tr>
+</table>
+	
+
+
+</body>
+</html>
